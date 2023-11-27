@@ -1,2 +1,2 @@
-# project_1-service
+# project_2-service
 Project №2 - Service
