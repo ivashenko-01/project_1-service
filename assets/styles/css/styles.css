@@ -30,9 +30,9 @@
 :root {
 
     /* -- =============== COLORS =============== -- */
-    --body-color: X;
-    --title-color: X;
-    --text-color: X;
+    --body-color: #ffffff;
+    --title-color: #000000;
+    --text-color: #000000;
   
     /* -- =============== FONT AND TYPOGRAPHY =============== -- */
     /* -- .5rem = 8px | 1rem = 16px | 2rem = 32px -- */
@@ -40,15 +40,15 @@
 
     --body-font-size: 1rem; /* 16px */
 
-    --h1-font-size: 64px; /* 4rem */
-    --h2-font-size: 48px; /* 3rem */
-    --h3-font-size: 36px; /* 2,25rem */
-    --h4-font-size: 32px; /* 2rem */
-    --h5-font-size: 24px; /* 1.5rem */
-    --h6-font-size: 20px; /* 1.25rem */
+    --h1-font-size: 48px; /* 3rem */
+    --h2-font-size: 36px; /* 2,25rem */
+    --h3-font-size: 32px; /* 2rem */
+    --h4-font-size: 24px; /* 1.5rem */
+    --h5-font-size: 20px; /* 1.25rem */
+    --h6-font-size: 16px; /* 1rem */
 
-    --text-font-size: 16px; /* 1rem */
-    --description-font-size: 14px; /* 0.875rem */
+    --text-font-size: 14px; /* 0.875rem */
+    --description-font-size: 12px;
 
     --button-font-size: 20px; /* 1.25rem */
 
@@ -80,6 +80,10 @@ button {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header__menu {
+  display: none;
 }
 
 .slider {
@@ -127,7 +131,7 @@ button {
   margin-bottom: 10px;
 
   color: #FFF;
-  font-size: 48px;
+  font-size: var(--h1-font-size);
   font-style: normal;
   line-height: normal;
 }
@@ -136,7 +140,7 @@ button {
   margin-bottom: 45px;
 
   color: #FFF;
-  font-size: 24px;
+  font-size: var(--h4-font-size);
   font-style: normal;
   line-height: normal;
 }
@@ -176,7 +180,6 @@ button {
 .header__top-button {
   padding: 14px 24px;
   background: #FFF2F2;
-  color: #000000;
 }
 
 .header__bottom {
@@ -231,7 +234,6 @@ button {
   flex-direction: column;
   gap: 24px;
 
-  color: #000;
 
   padding-left: 100px;
 
@@ -258,7 +260,6 @@ button {
 }
 
 .section__heading-description {
-  color: #000;
   font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
@@ -311,8 +312,8 @@ button {
 }
 
 .services__item-title {
-  color: #000;
-  font-size: 20px;
+
+  font-size: var(--h5-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -321,9 +322,8 @@ button {
 }
 
 .services__item-description {
-  color: #000;
   text-align: center;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
 
@@ -338,7 +338,7 @@ button {
 
 .services__item-buttons .item-button_detail {
   color: rgba(0, 0, 0, 0.50);
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
   text-decoration: underline;
@@ -350,7 +350,7 @@ button {
   padding: 14px 24px;
   color: #C22;
 
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
 }
@@ -419,8 +419,7 @@ button {
 .news-list__item-title-active {
   margin-bottom: 24px;
 
-  color: #000;
-  font-size: 20px;
+  font-size: var(--h5-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -434,8 +433,7 @@ button {
 .news-list__item-title {
   margin-bottom: 20px;
 
-  color: #000;
-  font-size: 20px;
+  font-size: var(--h5-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -444,15 +442,13 @@ button {
 .news-list__item-description-active {
   margin-bottom: 15px;
 
-  color: #000;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
 }
 
 .news-list__item-description {
-  color: #000;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
 }
@@ -460,8 +456,7 @@ button {
 .news-list__item-author-active {
   margin-top: 50px;
 
-  color: #000;
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -480,8 +475,7 @@ button {
 .contacts__box-title {
   margin-bottom: 20px;
 
-  color: #000;
-  font-size: 36px;
+  font-size: var(--h2-font-size);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -491,7 +485,7 @@ button {
   margin-bottom: 20px;
 
   color: rgba(0, 0, 0, 0.50);
-  font-size: 14px;
+  font-size: var(--text-font-size);
   font-style: normal;
   line-height: normal;
 }
@@ -501,8 +495,7 @@ button {
   flex-direction: column;
   gap: 15px;
 
-  color: #000;
-  font-size: 20px;
+  font-size: var(--h5-font-size);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -529,4 +522,157 @@ button {
 
 .contacts__link span {
   text-decoration: underline;
+}
+
+
+/* ----------- АДАПТАЦИЯ ПОД УСТРОЙСТВА ----------- */
+@media (max-width: 768px) {
+  :root {
+
+    --body-font-size: 14px; /* 0.875rem */
+
+    --h1-font-size: 32px; /* 2rem */
+    --h2-font-size: 24px; /* 1.5rem */
+    --h3-font-size: 20px; /* 1.25rem */
+    --h4-font-size: 16px; /* 1rem */
+    --h5-font-size: 14px; /* 0.875rem */
+    --h6-font-size: 12px;
+
+    --text-font-size: 10px;
+    --description-font-size: 8px;
+
+    --button-font-size: 14px; /* 0.875rem */
+  }
+
+  .services__list {
+    justify-content: center;
+  }
+
+  .slider__left {
+    margin-left: 15%;
+    width: 25px;
+    top: 95%;
+  }
+
+  .slider__right {
+    margin-right: 15%;
+    width: 25px;
+    top: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .header__top {
+    padding: 10px 0;
+  }
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    position: relative;
+  }
+
+  .header__menu span {
+    width: 25px;
+    height: 1px;
+    background-color: #FFF;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+
+
+
+  .header__bottom {
+    display: none;
+  }
+
+  .header__top-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header__top-wrapper {
+    flex-direction: column;
+  }
+
+  .header__top-button {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+  }
+
+  .contacts__map {
+    margin-top: 25px;
+  }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+  .slider__container {
+    position: static;
+  }
+
+  .slider__left {
+    top: 60%;
+    margin-left: 35%;
+    min-width: 15px;
+  }
+
+  .slider__right {
+    top: 60%;
+    margin-right: 35%;
+    min-width: 15px;
+  }
+
+
+  .section__heading {
+    padding-left: 50px;
+  }
+
+  .section__heading::before {
+    width: 25px;
+    height: 1px;
+  
+    position: absolute;
+    top: 15px;
+    left: 12px;
+  }
+
+  .services__list {
+    gap: 30px;
+  }
+  
+  .services__item-img {
+    margin-bottom: 15px;
+  }
+
+  .services__item-description {
+  
+    margin-bottom: 30px;
+  }
+
+  .services__item {
+    padding: 30px 10px;
+  }
 }
