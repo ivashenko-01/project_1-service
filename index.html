@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="header__bottom">
+            <div class="header__bottom" id="menu-content">
                 <div class="container">
                     <div class="header__bottom-wrapper">
                         <a class="header__bottom-logo" href="#"><img src="./assets/images/logo.png" alt="logo"></a>
@@ -82,13 +82,16 @@
                 </div>
             </div>
 
-            <a href="#">
-                <div class="header__menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <a id="menu-button" class="header__menu active" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <a id="menu-close" class="header__menu-close" href="#">
+                <span></span>
+                <span></span>
             </a>
 
 
@@ -100,16 +103,26 @@
             
             <section class="section slider">
                 <div class="container slider__container">
-                    <div class="slide">
+                    <div class="slide slider__item">
                         <h1 class="slide__title">ОБУЧЕНИЕ ВЕРСТКИ С НУЛЯ</h1>
                         <p class="slide__description">изучение HTML и CSS в коротком, либо полном объеме</p>
                         <a class="slide__button" href="#">Пройти обучение</a>
                     </div>
+                    <div class="slide slider__item">
+                        <h1 class="slide__title">ОБУЧЕНИЕ JAVASCRIPT С НУЛЯ</h1>
+                        <p class="slide__description">изучение JAVASCRIPT в коротком, либо полном объеме</p>
+                        <a class="slide__button" href="#">Пройти обучение</a>
+                    </div>
+                    <div class="slide slider__item active">
+                        <h1 class="slide__title">ОБУЧЕНИЕ FRONTEND С НУЛЯ</h1>
+                        <p class="slide__description">изучение FRONTEND в коротком, либо полном объеме</p>
+                        <a class="slide__button" href="#">Пройти обучение</a>
+                    </div>
                     <a href="#">
-                        <img class="slider__left" src="./assets/images/left.svg" alt="left">
+                        <img class="slider__left slider-btn left" src="./assets/images/left.svg" alt="left">
                     </a>
                     <a href="#">
-                        <img class="slider__right" src="./assets/images/right.svg" alt="right">
+                        <img class="slider__right slider-btn right" src="./assets/images/right.svg" alt="right">
                     </a>
                 </div>
             </section>
@@ -318,5 +331,9 @@
     
     <!-- Подключение основного JavaScript -->
     <script src="./assets/scripts/javascript/main.js"></script>
+
+    <script src="./assets/scripts/javascript/slider.js"></script>
+
+    <script src="./assets/scripts/javascript/show-menu.js"></script>
 </body>
 </html>
