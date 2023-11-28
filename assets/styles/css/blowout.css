@@ -29,6 +29,10 @@ img, svg {
 	height: auto;
 }
 
+img {
+    width: 100%;
+}
+
 input {
     border: none;
     outline: none;

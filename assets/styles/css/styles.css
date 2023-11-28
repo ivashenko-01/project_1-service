@@ -75,6 +75,36 @@ button {
   font-size: var(--button-font-size);
 }
 
+.return {
+  width: 50px;
+  height: 50px;
+  background-color: #C22;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  cursor: pointer;
+
+  z-index: 1;
+
+}
+
+
+/* .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+} */
+
 .container {
   max-width: 1240px;
   width: 100%;
@@ -108,6 +138,7 @@ button {
 }
 
 .slider__left {
+  width: 35px;
   position: absolute;
   top: 50%;
   left: 0;
@@ -119,6 +150,7 @@ button {
 }
 
 .slider__right {
+  width: 35px;
   position: absolute;
   right: 0;
   top: 50%;
@@ -311,7 +343,6 @@ button {
   text-align: center;
 
   box-shadow: 4px 4px 16px 0px rgba(204, 34, 34, 0.22);
-
 }
 
 .services__item-img {
@@ -536,6 +567,138 @@ button {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- СТРАНИЦА С ОПРЕДЕЛЕННЫМ КУРСОМ ----------- */
+
+.course__wrapper {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.course__images {
+  max-width: 500px;
+  width: 100%;
+}
+
+.course__info {
+  max-width: 600px;
+}
+
+.course__info-general, 
+.course__info-description,
+.course__reviews,
+.course__reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-bottom: 50px;
+}
+
+.info-general__title,
+.info-description__title,
+.course__reviews-title {
+  font-size: var(--h3-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.info-general__description,
+.info-description__description {
+  font-size: var(--text-font-size);
+  text-align: justify;
+}
+
+.course__reviews-item {
+  max-width: 900px;
+}
+
+.info-general__description .info-general__link {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- АДАПТАЦИЯ ПОД УСТРОЙСТВА ----------- */
 @media (max-width: 768px) {
   :root {
@@ -569,6 +732,19 @@ button {
     margin-right: 15%;
     width: 25px;
     top: 95%;
+  }
+
+  .course__wrapper {
+    gap: 30px;
+  }
+
+  .course__info-general, 
+  .course__info-description,
+  .course__reviews,
+  .course__reviews-list {
+    gap: 10px;
+
+    margin-bottom: 30px;
   }
 }
 
@@ -746,4 +922,9 @@ button {
   .services__item {
     padding: 30px 10px;
   }
+
+  .course__wrapper {
+    gap: 10px;
+  }
+
 }
